@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   }
   
-  //  if (document.querySelector('.development_projects-slider')   ) {
+   if (document.querySelector('.development_projects-slider')   ) {
   const slider = tns({
     "container": ".development_projects-slider",
     items: 1,
@@ -28,22 +28,23 @@ document.addEventListener('DOMContentLoaded', function () {
     autoplayButtonOutput	: false, 
     "mouseDrag": true,
   });
-// } 
-
-//   const zgu_slider = tns({
-//     "container": ".zgu-slider",
-//     items: 1,
-//     // "autoWidth": true,
-//     "swipeAngle": false,
-//     "autoplayTimeout": 5500,
-//     slideBy: '1',
-//     autoplay: true,
-//     controls:false,
-//     navContainer: "#slPager",
-//     autoplayButtonOutput	: false, 
-//     "mouseDrag": true,
-//   });
-// }
+} 
+if (document.querySelector('.zgu-slider')   ) {
+  const zgu_slider = tns({
+    "container": ".zgu-slider",
+    items: 1,
+    // "autoWidth": true,
+    "swipeAngle": false,
+    "autoplayTimeout": 5500,
+    slideBy: '1',
+    autoplay: true,
+    controls:false,
+    navContainer: "#slPager",
+    autoplayButtonOutput	: false, 
+    "mouseDrag": true,
+  });
+}
+if (document.querySelector('.partners-slider')   ) {
 
   const trust_slider = tns({
     "container": ".partners-slider",
@@ -58,16 +59,17 @@ document.addEventListener('DOMContentLoaded', function () {
 
   });
 
+
 document.querySelector('.prev').addEventListener('click', function () {
   trust_slider.goTo('prev');
   });
 document.querySelector('.next').addEventListener('click', () => {
   trust_slider.goTo('next');
   });
-
-//   document.querySelector('.up_link').onclick = () => {
-//     window.scrollTo(pageYOffset, 0);
-// }
+}
+  document.querySelector('.up_link').onclick = () => {
+    window.scrollTo(pageYOffset, 0);
+}
 
 
 
